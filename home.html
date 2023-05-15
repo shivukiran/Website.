@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neotronics</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+</head>
+<style>
+    .shop{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width:1000px){
+    .shop{
+    grid-template-columns: repeat(2,223px);
+    }
+}
+@media (max-width:500px){
+    .shop{
+    grid-template-columns: repeat(1,223px);
+    }
+}
+.item{
+    border:2px solid #212529;
+    border-radius: 4px;
+   
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:10px;
+    
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+}
+.bi-dash-lg{
+    color:red;
+}
+.bi-plus-lg{
+    color: green;
+}
+</style>
+<body>
+    
+    <section id="header">
+        <a href="a"><img src="/logo2.png"  class ="logo" width="120vw" alt=""></a>
+
+        <div class="navigation">
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+                <div class="cart">
+                    <li><a href="cart.html"><i class="bi bi-cart-check"></i> </a></li> 
+                    <div id="cartamount"     class="cartamount">0</div>
+                    </div>
+            </ul>
+        </div>
+    
+    </section>
+
+    <section id="hero">
+        <h2>Super value deals</h2>
+        <h1>on all products</h1>
+        <button>Shop Now</button>
+    </section>
+
+    <section id="feature"  class="section-p1">
+        <div class="fe-box">
+            <img src="/features/f1.png" alt="">
+            <h6>Free shipping</h6>
+        </div>  
+        <div class="fe-box">
+            <img src="/features/f2.png" alt="">
+            <h6>Fastest delivery</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/features/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div> 
+         <div class="fe-box">
+            <img src="/features/f4.png" alt="">
+            <h6>Our offers</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/features/f5.png" alt="">
+            <h6>Patnership</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/features/f6.png" alt="">
+            <h6>Our Service</h6>
+        </div>
+    </section>
+
+    <div class="shop" id="shop">
+   
+    </div>
+
+    <section id="banner" class="section-m1">
+     
+        <h2>  Upto <span>70% off</span> on New arrivals
+            <br>
+        <button  class="normal">See More</button></h2>
+    </section>
+    <section id="product1"
+    class="section-p1">
+    <h2>New Products</h2>
+    <p>Winter collection for New morden Products </p>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="/i14.jpg" alt="">
+            <div class="des">
+                <span>Apple</span>
+                <h5>i-phone 14 series</h5>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>RS 16715</h4>
+                    <a href="#"><i class="bi bi-cart-check"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="/iwatch.avif" alt="">
+            <div class="des">
+                <span>Apple</span>
+                <h5>14 series watch</h5>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>RS 12315</h4>
+                    <a href="#"><i class="bi bi-cart-check"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="/iwatch2.avif" alt="">
+            <div class="des">
+                <span>Apple</span>
+                <h5>premium watches</h5>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>RS 115000</h4>
+                    <a href="#"><i class="bi bi-cart-check"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="/ipad.avif" alt="">
+            <div class="des">
+                <span>Apple</span>
+                <h5>i-pad</h5>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>RS 114000</h4>
+                    <a href="#"><i class="bi bi-cart-check"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="/ipad2.jpg" alt="">
+            <div class="des">
+                <span>Apple </span>
+                <h5>Multi offers</h5>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>RS 170000</h4>
+                    <a href="#"><i class="bi bi-cart-check"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="/samsung.jpg" alt="">
+            <div class="des">
+                <span>Samsung</span>
+                <h5>S22</h5>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>RS 190900</h4>
+                    <a href="#"><i class="bi bi-cart-check"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="/samer-khodeir-V2owNGx837Q-unsplash.jpg" alt="">
+            <div class="des">
+                <span>Samsung</span>
+                <h5>Smart Watches</h5>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>RS 14000</h4>
+                    <a href="#"><i class="bi bi-cart-check"></i></a>
+                </div>
+            </div>
+        </div> <div class="pro">
+            <img src="/silivan-munguarakarama-VHbny55vlyE-unsplash.jpg" alt="">
+            <div class="des">
+                <span>Samsung</span>
+                <h5>Earpods</h5>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>RS 5000</h4>
+                    <a href="#"><i class="bi bi-cart-check"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Crazy deals</h4>
+            <h2>Buy 1 get 1 FREE </h2>
+            <span> The best sales</span>
+            <button class="btn">View More</button>
+
+        </div> 
+        <div class="banner-box  banner-box2" >
+            <h4>Crazy deals</h4>
+            <h2>Buy 1 get 1 FREE </h2>
+            <span> The best sales</span>
+            <button class="btn">View More</button>
+        </div>
+
+    </section>
+
+    <section id="banner3">
+        <div class="banner-box banner-box2">
+          
+            <h2>Buy 1 get 1 FREE </h2>
+           <h3>winter collection</h3>
+            <button class="btn">View More</button>
+        </div>
+
+        <div class="banner-box banner-box3">
+          
+            <h2>Buy 1 get 1 FREE </h2>
+           <h3>winter collection</h3>
+            <button class="btn">View More</button>
+        </div>
+        <div class="banner-box">
+          
+            <h2>Buy 1 get 1 FREE </h2>
+           <h3>winter collection</h3>
+            <button class="btn">View More</button>
+        </div>
+
+        
+    </section>
+
+    <section id="newsletter" class="section-p1  section-m1">
+        <div class="newstxt">
+            <h4>Sign Up for News Letter</h4>
+            <p> our shops welcomes you with <span>Special offers</span> </p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">sign up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo"    src="/logo2.png" width="150vw" alt="">
+
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> mathikere banglore.</p>
+            <p><strong>Phone:</strong>9353355922</p>
+            <p><strong>Working Hours:</strong> 10.00-22.00</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-pintrest-p"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">about us</a>
+            <a href="#">delivery information</a> 
+            <a href="#">privacy policy</a> 
+            <a href="#">terms and condition</a>
+             <a href="#">contact us</a>
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <a href="#">sign in</a>
+            <a href="#">view cart</a> 
+            <a href="#">track My order</a> 
+            <a href="#">my wishlist</a>
+             <a href="#">help us</a>
+        </div>
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From App store or Google Store</p>
+            <div class="row">
+                <img src="/pay/app.jpg" alt="">
+                <img src="/pay/play.jpg">
+                <img src="/pay/pay.png">
+            </div>
+        </div>
+        <div class="copyright">
+            <p> @ 2022 ecommerce.copyright.Neoelectronics</p>
+        </div>
+    </footer>
+</body>
+<script src="data.js"></script>
+<script src="web.js"></script>
+</html>
